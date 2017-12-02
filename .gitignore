@@ -1,0 +1,9 @@
+*.exe
+.DS_Store
+
+pkg/
+
+*.code-workspace
+.vscode/
+debug
+debug.test
