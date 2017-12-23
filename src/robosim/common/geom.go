@@ -18,6 +18,10 @@ func RadToDeg(rad Radians) Degrees {
 	return Degrees(rad * (360 / (2 * math.Pi)))
 }
 
+func NormalizeAngleD(angle Degrees) Degrees {
+	return Degrees(WrapInInterval(float64(angle), 0, 360))
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 type Point struct{ X, Y float64 }
